@@ -25,4 +25,6 @@ app.use('/api/events', require('./routes/events') );
 // Escuchar peticiones
 app.listen( process.env.PORT, () => {
     console.log(`Servidor corriendo en el puerto ${ process.env.PORT }:)`);
+    
+    console.log(`link de la base de datos ${ process.env.DB_CNN }`);
 });
